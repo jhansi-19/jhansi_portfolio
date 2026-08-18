@@ -159,12 +159,13 @@ img { max-width: 100%; display: block; }
 .cta-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
 
 .home-image { display: flex; justify-content: center; }
-.image-container { position: relative; width: 320px; height: 320px; }
+.image-container { position: relative; width: 300px; height: 300px; }
 .profile-img {
   width: 100%; height: 100%;
   object-fit: cover;
-  border-radius: 32px;
-  box-shadow: var(--shadow-lg);
+  border-radius: 50%;
+  border: 6px solid var(--white);
+  box-shadow: 0 0 0 4px var(--primary), var(--shadow-lg);
   position: relative;
   z-index: 2;
 }
@@ -206,23 +207,29 @@ img { max-width: 100%; display: block; }
   gap: 56px;
   align-items: center;
 }
-.about-img-container { position: relative; }
+.about-img-container {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
 .about-img-container img {
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-lg);
   width: 100%;
-  aspect-ratio: 4/5;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid var(--white);
+  box-shadow: 0 0 0 4px var(--secondary), var(--shadow-lg);
   object-fit: cover;
   position: relative;
   z-index: 2;
 }
 .about-bg-element {
   position: absolute;
-  inset: 16px -16px -16px 16px;
+  inset: -14px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  border-radius: var(--radius);
+  border-radius: 50%;
   z-index: 1;
-  opacity: 0.15;
+  opacity: 0.18;
 }
 .about-text h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; }
 .about-text p { color: var(--text-muted); margin-bottom: 14px; }
