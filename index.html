@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jhansi Gudelli</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <h1>Jhansi Gudelli</h1>
+    </div>
+    <div class="nav-menu" id="nav-menu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#resume" class="nav-link">Resume</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="section home-section">
+  <div class="container">
+    <div class="home-content">
+      <div class="home-text">
+        <h2 class="greeting">Hello, I'm</h2>
+        <h1 class="name">Jhansi Gudelli</h1>
+        <div class="typewriter-container">
+          <span>I am a </span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="description">
+          Full-stack software engineer building reliable, event-driven banking and lending systems.
+          Currently shipping microservices at Infosys Springboard, and solving 400+ DSA problems on
+          the side.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/jhansi-19" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jhansi-gudelli-094543315/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:gudellijhansi6@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <div class="cta-buttons">
+          <button class="btn btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+          <button class="btn btn-secondary" onclick="scrollToSection('resume')">Download Resume</button>
+        </div>
+      </div>
+      <div class="home-image">
+        <div class="image-container">
+          <img src="assets/jhansi.jpg" alt="Profile" class="profile-img">
+          <div class="floating-element element-1"></div>
+          <div class="floating-element element-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator" onclick="scrollToSection('about')">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>About <span class="highlight">Me</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-image">
+        <div class="about-img-container">
+          <img src="assets/jhansi.jpg" alt="About me">
+          <div class="about-bg-element"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <h3>Full-Stack Engineer, Fintech-Focused</h3>
+        <p>I'm a CS undergraduate at IIIT Sri City who builds event-driven microservices for digital
+           banking and lending — the kind of systems that have to be right every single time. I enjoy
+           turning complex distributed-systems problems into reliable, well-tested services.</p>
+        <p>When I'm not shipping backend code, you'll find me solving DSA problems on LeetCode,
+           exploring cloud architecture, or experimenting with LLM fine-tuning. I believe in continuous
+           learning and staying close to the fundamentals while adopting new tools.</p>
+        <div class="highlights">
+          <div class="highlight-item">
+            <i class="fas fa-code"></i>
+            <div>
+              <h4>Clean Code</h4>
+              <p>Writing maintainable and scalable code</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-bolt"></i>
+            <div>
+              <h4>Fast Learner</h4>
+              <p>Quick to adapt to new technologies</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-heart"></i>
+            <div>
+              <h4>User-Focused</h4>
+              <p>Creating delightful user experiences</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-coffee"></i>
+            <div>
+              <h4>Problem Solver</h4>
+              <p>Finding solutions to complex challenges</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section experience-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Work <span class="highlight">Experience</span></h2>
+      <div class="section-line"></div>
+      <p>What I've been building in industry.</p>
+    </div>
+    <div class="experience-card">
+      <div class="experience-header">
+        <div>
+          <h3>Software Engineering Intern</h3>
+          <p class="experience-org">Infosys Springboard &middot; Remote</p>
+        </div>
+        <span class="experience-date">Jul 2026 — Present</span>
+      </div>
+      <p class="experience-desc">
+        Building <strong>FinCore Nexus</strong>, an enterprise digital banking platform on a layered
+        microservices architecture (Angular, Java, Spring Boot, PostgreSQL) supporting a large base of
+        active accounts with high uptime.
+      </p>
+      <ul class="experience-list">
+        <li>Developed Account, Customer, and Loan Service microservices handling high-volume daily
+            transactions and loan disbursements, using ACID-compliant transactions and the Saga
+            pattern for distributed workflows.</li>
+        <li>Built IMPS/NEFT/UPI payment processing and a KYC microservice with OCR and face-match
+            verification, using an event-driven architecture for high-throughput, high-success-rate
+            transaction processing.</li>
+      </ul>
+      <div class="experience-tags">
+        <span class="tech-tag">Java</span>
+        <span class="tech-tag">Spring Boot</span>
+        <span class="tech-tag">Angular</span>
+        <span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">Saga Pattern</span>
+        <span class="tech-tag">Event-Driven</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured <span class="highlight">Projects</span></h2>
+      <div class="section-line"></div>
+      <p>Here are some of my recent projects that showcase my skills and experience in software development.</p>
+    </div>
+    <div class="projects-grid">
+
+      <!-- ShelterSeek -->
+      <div class="project-card featured">
+        <div class="project-image">
+          <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=500" alt="ShelterSeek">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://shelterseek-navy.vercel.app" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="https://github.com/jhansi-19" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="featured-badge">Featured</div>
+        </div>
+        <div class="project-content">
+          <h3>ShelterSeek</h3>
+          <p>A full-stack room booking platform with role-based access for travelers, hosts, and admins.
+             JWT authentication, secure sessions, and booking workflows on a REST API.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://shelterseek-navy.vercel.app" target="_blank" class="project-action">
+              <span>Live Demo</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/jhansi-19" target="_blank" class="project-action">
+              <span>Source</span>
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud-Based Disaster Recovery -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Cloud-Based Disaster Recovery">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://github.com/jhansi-19/quiz-app" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Cloud-Based Disaster Recovery</h3>
+          <p>Active-passive DR system on AWS Lambda, API Gateway, and DynamoDB Global Tables with
+             automated failover, plus a React frontend on Amplify with Cognito auth.
+             Achieved <strong>RTO &lt;2 min</strong> and <strong>RPO &lt;10 min</strong>.</p>
+          <div class="project-tech">
+            <span class="tech-tag">AWS Lambda</span>
+            <span class="tech-tag">DynamoDB</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">CloudWatch</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/jhansi-19/quiz-app" target="_blank" class="project-action">
+              <span>Source</span>
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SkillBridge -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=500" alt="SkillBridge">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://github.com/jhansi-19/SkillBridge" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>SkillBridge</h3>
+          <p>A student freelance marketplace with role-based access, milestone-tracked payments, and
+             real-time chat with typing indicators, read receipts, and file sharing.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Socket.IO</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/jhansi-19/SkillBridge" target="_blank" class="project-action">
+              <span>Source</span>
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>My <span class="highlight">Skills</span></h2>
+      <div class="section-line"></div>
+      <p>A comprehensive overview of my technical skills and expertise across different domains of development.</p>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <div class="skill-header">
+          <div class="skill-icon frontend">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Frontend</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>React/Next.js</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>CSS/Tailwind</span><span>92%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>HTML</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-header">
+          <div class="skill-icon backend">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>Java/Spring Boot</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Node.js</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Express.js</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>REST APIs</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-header">
+          <div class="skill-icon database">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Database</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>MongoDB</span><span>87%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="87"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>PostgreSQL</span><span>83%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="83"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>MySQL</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-header">
+          <div class="skill-icon tools">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Tools &amp; DevOps</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>AWS</span><span>82%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Git</span><span>92%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="additional-skills">
+      <h3>Other Technologies</h3>
+      <div class="tech-tags">
+        <span class="tech-tag">Machine Learning</span>
+        <span class="tech-tag">Deep Learning</span>
+        <span class="tech-tag">TensorFlow</span>
+        <span class="tech-tag">PyTorch</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="section resume-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>My <span class="highlight">Resume</span></h2>
+      <div class="section-line"></div>
+      <p>Download my resume or view my professional experience and qualifications below.</p>
+      <button class="btn btn-primary download-btn" onclick="window.location.href='G.JHANSI.pdf';">
+        <i class="fas fa-download"></i>
+        Download Resume
+      </button>
+    </div>
+    <div class="resume-content">
+      <div class="resume-sidebar">
+        <div class="resume-card">
+          <h3><i class="fas fa-envelope"></i> Contact Info</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>gudellijhansi6@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 9391000802</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Telangana, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="resume-card">
+          <h3><i class="fas fa-award"></i> Certifications</h3>
+          <div class="certifications">
+            <div class="cert-item">Udemy Certified — Machine Learning Specialization</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-main">
+        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+        <div class="education-list">
+          <div class="education-item">
+            <div class="education-header">
+              <div class="education-info">
+                <h4>B.Tech in Computer Science</h4>
+                <p class="school">IIIT Sri City</p>
+              </div>
+              <div class="education-meta">
+                <span class="period"><i class="fas fa-calendar"></i> 2023 - 2027</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Chittoor, AP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Jhansi Gudelli</h3>
+        <p>Full-stack engineer passionate about building reliable systems and solving complex problems through code.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#resume">Resume</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Get In Touch</h4>
+        <div class="footer-social">
+          <a href="https://github.com/jhansi-19" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jhansi-gudelli-094543315/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:gudellijhansi6@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>gudellijhansi6@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made with <i class="fas fa-heart"></i></p>
+      <p>&copy; 2026 Jhansi Gudelli. All rights reserved.</p>
+      <button class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
